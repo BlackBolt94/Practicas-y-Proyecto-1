@@ -1,0 +1,62 @@
+ * {
+    padding: 0;
+    margin: 0;
+ }
+
+header {
+background-color: aqua;
+color: azure;
+
+padding: 10px;
+}
+
+.row {
+display: flex;
+flex-direction: row;
+}
+
+.column {
+display: flex;
+flex-direction: column;
+}
+
+.ensancha1 {
+   flex-grow: 1;
+}
+
+main {
+display: flex;
+}
+
+.pan {
+
+background-color: burlywood;
+
+padding-top: 2em;
+padding-bottom: 2em;
+
+border-radius: 2em;
+
+text-align: center;
+}
+
+.lechuga {
+   background-color: green;
+   /* height: 100px; */
+   height: 2em;
+}
+
+.queso {
+   background-color: yellow;
+   height: 20px;
+}
+
+.carne {
+background-color: rgb(108, 9, 9);
+height: 80px;
+}
+
+.mayonesa {
+background-color: white;
+height: 10px;
+}

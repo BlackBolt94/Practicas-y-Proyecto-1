@@ -1,0 +1,37 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-4 {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (min-width:300px) {
+    
+section {
+background-color: plum;
+border: 2px solid purple;
+grid-column: span 2;
+}
+}
+
+@media screen and (max-width:300px) {
+    section {
+        background-color: rgb(99, 17, 230);
+        border: 2px solid rgb(32, 97, 126);
+        grid-column: span 4;
+}
+}
+
+aside {
+background-color: aquamarine;
+
+}
+
+#principal {
+background-color: lightskyblue;
+grid-column: 1 / 4;
+}

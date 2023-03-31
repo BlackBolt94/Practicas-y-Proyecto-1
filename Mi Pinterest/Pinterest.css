@@ -1,0 +1,125 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    ;
+}
+
+body {
+    background-color: blueviolet;
+}
+
+.header {
+    background-color: #EA3546;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+
+}
+
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+    border-radius: 40px;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+.header .navbar-pinterest  {
+    list-style: none;
+}
+
+.header .navbar-pinterest li {
+display: inline-block;
+padding: 0 20px;
+}
+
+.header .navbar-pinterest a{
+    font-size: 700;
+    color: azure;
+    text-decoration: none;
+}
+
+.header .navbar-pinterest li:hover{
+    transform: scale(1.1);
+}
+
+.header .navbar-pinterest li a:hover{
+    color: yellow;
+}
+
+.header .finder input{ 
+    font-weight: 500;
+    padding: 10px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0;
+}
+
+.header .finder input:hover {
+    transform: scale(1.1);
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #001F54;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    outline: 2px solid white;
+    outline-offset: -10px;
+    cursor: pointer;
+}
+
+.grid-item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.05);
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+}
+
+@media screen  and (min-width: 300px) {
+ 
+    .contenedor {
+        background-color: #000000;
+        border: 2px solid #EA3546;
+        grid-column: span 2;
+        }
+        }
+
+.wide {
+    grid-column: span 2;
+}
+
+.tall {
+    grid-row: span 2;
+}
+
+footer {
+    background-color: #EA3546;
+    text-align: center; color: #000000;
+    padding: 10px;
+}
